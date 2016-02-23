@@ -1,0 +1,635 @@
+/* ==========================================================================
+   RESET
+   ========================================================================== */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==========================================================================
+   END RESET
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   ALL
+   ========================================================================== */
+
+body {
+  
+	line-height: 30px;
+	font-family: 'Din-Regular', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 23px;
+}
+
+h3 {
+	font-size: 21px;
+	text-align: center;
+}
+
+p {
+  font-size: 15px;
+}
+
+span {
+  color: #E6007E;
+}
+
+section {
+	margin-bottom: -30px;
+}
+
+.separateur {
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 0;
+	margin-bottom: -10px;
+}
+/* ==========================================================================
+   END ALL
+   ========================================================================== */
+
+	/*header*/
+
+header {
+	background-color: #009292;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 670px;
+}
+
+.logoUpToHead {
+	margin-top: 130px;
+	height: 300px;
+}
+
+
+
+/* ==========================================================================
+   SLIDER
+   ========================================================================== */
+
+#slider {
+	width: 100%;
+	max-width: 1300px;
+	overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+	animation: 30s slidy infinite;
+}
+
+#slider figure img {
+	width: 20%;
+	height: auto;
+	float: left;
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+/* ==========================================================================
+   END SLIDER
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   présentation formation + video
+   ========================================================================== */
+
+.fondBlanc {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  background: url(../images/pixel_body.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.fondBlanc h1 {
+  margin-top: 50px;
+}
+
+.artBlanc {
+	margin: auto;
+	width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+#artTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.artBlanc p {
+  width: 80%;
+  text-align: center;
+}
+
+#prezTop {
+  width: 40%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.artBlanc iframe {
+}
+
+/* ==========================================================================
+   END présentation formation + video
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   bordereau
+   ========================================================================== */
+
+.bordereau {
+  height: 200px;
+  background-color: #E2F5F3;
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.artBord {
+	width: 80%;
+}
+
+/* ==========================================================================
+   END bordereau
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   3 principes de la formation
+   ========================================================================== */
+
+.troisPrincipes {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url(../images/meuf.jpg) no-repeat;
+  background-size: cover;
+	background-attachment: fixed;
+}
+
+.artPrincipes {
+  width: 33%;
+	height: 300px;
+  text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.blocMove {
+	background: url(../images/pixel_parts3.png) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 80%;
+	height: 100%;
+	margin-top: 40px;
+	padding: 20px;
+}
+
+/* ==========================================================================
+   END 3 principes de la formation
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Up To, c'est quoi?
+   ========================================================================== */
+
+.conditions {
+	text-align: center;
+	font-size: 20px;
+	margin: 60px 0;
+}
+
+.simPedag {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+/* ==========================================================================
+   END Up To, c'est quoi?
+   ========================================================================== */
+
+
+
+
+
+/* ==========================================================================
+   langages + plus
+   ========================================================================== */
+
+.langagesPlus {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: url(../images/back_form2.jpg) no-repeat;
+  background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.sectionLogosLang {
+  display: flex;
+  flex-direction: column;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-top: 30px;
+}
+
+.sectionLogosLang h3 {
+	text-align: center;
+	color: white;
+}
+
+.logos {
+  display: flex;
+	justify-content: space-around;
+}
+
+.plus {
+	width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plus aside {
+  width: 40%;
+	height: 150px;
+  text-align: center;
+	background: url(../images/pixel_parts3.png) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 10px;
+}
+
+/* ==========================================================================
+   END langages + plus
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   partenaires
+   ========================================================================== */
+
+.partenaires {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: url(../images/homfem.jpg) no-repeat;
+  background-size: cover;
+	background-attachment: fixed;
+}
+
+.faceDellSimplon {
+	display: flex;
+	justify-content: space-around;
+}
+
+.faceDellSimplon img {
+	width: 25%;
+	height: 254px;
+}
+
+.autresParts {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.autresParts img {
+	height: 70px;
+}
+/* ==========================================================================
+   END partenaires
+   ========================================================================== */
+
+	 .fdContact {
+		padding-top: 70px;
+ 	  display: flex;
+ 	  width: 80%;
+ 	  height: 400px;
+ 	  justify-content: space-around;
+ 	  margin: auto;
+ 	}
+	 .contactForm {
+	   width: 60%;
+	 }
+	 .contactForm form {
+	   display: flex;
+	   flex-wrap: wrap;
+	   width: 100%;
+	 }
+	 .contactForm form button {
+	   width: 15%;
+	 }
+	 .formConteneur {
+	   width: 50%;
+	 }
+	 .formConteneur input {
+	   width: 75%;
+	 }
+	 .formConteneurTxt {
+	   display: flex;
+	   flex-wrap: wrap;
+	   width: 86%;
+	 }
+	 .formConteneurTxt textarea {
+	   width: 100%;
+	 }
+	 /*Fin Contact*/
+
+	 /*Footer*/
+
+	 footer {
+	   padding-top: 20px;
+	   padding-bottom: 50px;
+	   background-color: #009292;
+	   color : white;
+	 }
+	 .fondBleuVert {
+	   width: 100%;
+	   display: flex;
+	   justify-content: space-between;
+	 }
+	 footer p {
+	   padding-top: 20px;
+	   text-align: left;
+	   font-size: 10px;
+	   opacity: 0.8;
+	   letter-spacing: 1px;
+	   margin-left: 20px;
+	 }
+	 .liensRsxSoc {
+	   display: flex;
+	 }
+	 .liensRsxSoc .fa {
+	   text-align: right;
+	   margin-right: 20px;
+	   font-size: 30px;
+	 }
+	 .liensRsxSoc a, .liensRsxSoc a:hover, .liensRsxSoc a:active {
+	   color: white;
+	 }
+
+	 /*Fin Footer*/
+
+
+
+
+
+
+
+
+
+	 /* TEST */
+
+	 .accordion dl,
+	 .accordion-list {
+	    &:after {
+	        content: "";
+	        display:block;
+	        height:1em;
+	        width:33,333333%;
+	        background-color:darken(#38cc70, 10%);
+	      }
+	 }
+	 .accordion dd,
+	 .accordion__panel {
+	    background-color:transparent !important;
+	    font-size:1em;
+	    line-height:1.5em;
+	 }
+	 .accordion p {
+	   	padding:1em 2em 1em 2em;
+	   	background-color: rgba(255,255,255,0.72);
+	 }
+
+	 .accordion {
+	     position:relative;
+	     width: 300px;
+	 }
+	 .container {
+	   max-width:400px;
+	   margin:0 auto;
+	   padding:2em 0 0 0;
+	 }
+	 .accordionTitle{
+	 	margin-left: auto;
+	 	margin-right: auto;
+	 }
+	 .accordionTitle,
+	 .accordion__Heading {
+	  background-color: rgba(255,255,255,0,1);
+	    text-align:center;
+	      font-weight:700;
+	           padding:18px;
+	           display:block;
+	           text-decoration:none;
+	           color:black;
+	           transition:background-color 0.5s ease-in-out;
+	   border-bottom:1px solid darken(#38cc70, 5%);
+	   &:before {
+	    content: "+";
+	    font-size:1.5em;
+	    line-height:0.5em;
+	    float:left;
+	    transition: transform 0.3s ease-in-out;
+	   }
+	   &:hover {
+	     background-color:darken(#38cc70, 10%);
+	   }
+	 }
+	 .accordionTitleActive,
+	 .accordionTitle.is-expanded {
+	    background-color:darken(#38cc70, 10%);
+	     &:before {
+
+	       transform:rotate(-225deg);
+	     }
+	 }
+	 .accordionItem {
+	     height:auto;
+	     overflow:hidden;
+	     //SHAME: magic number to allow the accordion to animate
+
+	      max-height:50em;
+	     transition:max-height 1s;
+
+
+	     @media screen and (min-width:48em) {
+	          max-height:15em;
+	         transition:max-height 0.5s
+
+	     }
+
+
+	 }
+
+	 .accordionItem.is-collapsed {
+	     max-height:0;
+	 }
+	 .no-js .accordionItem.is-collapsed {
+	   max-height: auto;
+	 }
+	 .animateIn {
+	      animation: accordionIn 0.45s normal ease-in-out both 1;
+	 }
+	 .animateOut {
+	      animation: accordionOut 0.45s alternate ease-in-out both 1;
+	 }
+	 @keyframes accordionIn {
+	   0% {
+	     opacity: 0;
+	     transform:scale(0.9) rotateX(-60deg);
+	     transform-origin: 50% 0;
+	   }
+	   100% {
+	     opacity:1;
+	     transform:scale(1);
+	   }
+	 }
+
+	 @keyframes accordionOut {
+	     0% {
+	        opacity: 1;
+	        transform:scale(1);
+	      }
+	      100% {
+	           opacity:0;
+	            transform:scale(0.9) rotateX(-60deg);
+	        }
+	 }
+
+	 .section2{
+		 display: flex;
+		 height: 328px;
+		 padding-top: 40px;
+		 padding-bottom: 40px;
+		 background: url(../images/meuf.jpg) no-repeat;
+		 background-size: cover;
+		 background-attachment: fixed;
+	 }
+
+	 .section2:hover{
+
+		animation: open 1s alternate ease-out both 1;
+
+	  -moz-animation: open 1s alternate ease-out both 1;
+
+		-op-animation: open 1s alternate ease-out both 1;
+
+		-webkit-animation: open 1s alternate ease-out both 1;
+
+	 }
+
+	 @keyframes open{
+	 	from{
+	 		height: 328px;
+	 	}
+	 	to{
+	 		height: 396px;
+	 	}
+	 }

@@ -1,0 +1,77 @@
+
+#menu {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.gif");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 100% 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  align-content: space-around;
+  z-index: 100;
+  font-family: 'Din-Regular', sans-serif;
+}
+
+#navicon {
+  z-index: 9999999999;
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  opacity: 0.8;
+
+}
+
+#navicon:hover {
+  opacity: 1;
+}
+
+#navicon img {
+  border-radius: 10px;
+}
+
+#menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  color: #3a3a3a;
+  color: transparent;  /*permet le blur */
+  text-shadow: 0 0 3px rgba(0,0,0,0.8); /*permet le blur */
+  margin: 2% 0px;
+  font-size: 38px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+#menu a:hover {
+  /*color: #eb8a2d;*/
+  color: white;
+
+  font-weight: bold;
+}
+
+#menu img {
+  height: 100px;
+}
+
+/*NAVICON*/
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 5px;
+  height: 5px;
+  width: 35px;
+  background: #3a3a3A;
+  position: absolute;
+  display: block;
+  content: '';
+
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
